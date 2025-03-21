@@ -1,115 +1,99 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Student Adjectives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f7ff;
+        }
+
+        #wordDisplay {
+            font-size: 4em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 2rem;
+            text-align: center;
+            min-height: 120px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Positive Student Adjectives&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f0f7ff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>#wordDisplay {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 4em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 120px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(-20px); }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="wordDisplay"&gt;Click the button!&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="showNewWord()"&gt;Show Another Compliment&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const adjectives = [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Adaptable', 'Adventurous', 'Amazing', 'Aspiring', 'Astute',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Balanced', 'Benevolent', 'Bright', 'Brilliant', 'Caring',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Confident', 'Courageous', 'Courteous', 'Creative', 'Determined',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Diligent', 'Disciplined', 'Dependable', 'Eloquent', 'Empathetic',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Energetic', 'Enthusiastic', 'Exemplary', 'Fantastic', 'Fearless',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Focused', 'Generous', 'Gifted', 'Gracious', 'Hardworking',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Harmonious', 'Humorous', 'Innovative', 'Inquisitive', 'Intuitive',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Judicious', 'Jovial', 'Joyful', 'Kind-hearted', 'Keen', 'Knowledgeable',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Leaderly', 'Lively', 'Logical', 'Meticulous', 'Modest', 'Motivated',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Neighborly', 'Nimble', 'Noble', 'Observant', 'Open-minded', 'Outstanding',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Passionate', 'Perceptive', 'Persistent', 'Qualified', 'Quick-witted',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Questioning', 'Reliable', 'Resilient', 'Resourceful', 'Self-aware',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Sociable', 'Smart', 'Talented', 'Tenacious', 'Thoughtful', 'Unique',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Unstoppable', 'Upbeat', 'Valiant', 'Versatile', 'Vibrant', 'Warmhearted',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Wholesome', 'Wise', 'Xenial', 'Yearning', 'Yielding', 'Youthful',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'Zealous', 'Zesty', 'Zippy'</p>
-<p class="p1"><span class="Apple-converted-space">        </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function getRandomWord() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const randomIndex = Math.floor(Math.random() * adjectives.length);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>return adjectives[randomIndex];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function showNewWord() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const wordDisplay = document.getElementById('wordDisplay');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>wordDisplay.textContent = getRandomWord();</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Add animation effect</p>
-<p class="p1"><span class="Apple-converted-space">            </span>wordDisplay.style.animation = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>void wordDisplay.offsetWidth; // Trigger reflow</p>
-<p class="p1"><span class="Apple-converted-space">            </span>wordDisplay.style.animation = 'fadeIn 0.5s';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Initial word display</p>
-<p class="p1"><span class="Apple-converted-space">        </span>showNewWord();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <div id="wordDisplay">Click the button!</div>
+        <button onclick="showNewWord()">Show Another Compliment</button>
+    </div>
+
+    <script>
+        const adjectives = [
+            'Adaptable', 'Adventurous', 'Amazing', 'Aspiring', 'Astute',
+            'Balanced', 'Benevolent', 'Bright', 'Brilliant', 'Caring',
+            'Confident', 'Courageous', 'Courteous', 'Creative', 'Determined',
+            'Diligent', 'Disciplined', 'Dependable', 'Eloquent', 'Empathetic',
+            'Energetic', 'Enthusiastic', 'Exemplary', 'Fantastic', 'Fearless',
+            'Focused', 'Generous', 'Gifted', 'Gracious', 'Hardworking',
+            'Harmonious', 'Humorous', 'Innovative', 'Inquisitive', 'Intuitive',
+            'Judicious', 'Jovial', 'Joyful', 'Kind-hearted', 'Keen', 'Knowledgeable',
+            'Leaderly', 'Lively', 'Logical', 'Meticulous', 'Modest', 'Motivated',
+            'Neighborly', 'Nimble', 'Noble', 'Observant', 'Open-minded', 'Outstanding',
+            'Passionate', 'Perceptive', 'Persistent', 'Qualified', 'Quick-witted',
+            'Questioning', 'Reliable', 'Resilient', 'Resourceful', 'Self-aware',
+            'Sociable', 'Smart', 'Talented', 'Tenacious', 'Thoughtful', 'Unique',
+            'Unstoppable', 'Upbeat', 'Valiant', 'Versatile', 'Vibrant', 'Warmhearted',
+            'Wholesome', 'Wise', 'Xenial', 'Yearning', 'Yielding', 'Youthful',
+            'Zealous', 'Zesty', 'Zippy'
+        ];
+
+        function getRandomWord() {
+            const randomIndex = Math.floor(Math.random() * adjectives.length);
+            return adjectives[randomIndex];
+        }
+
+        function showNewWord() {
+            const wordDisplay = document.getElementById('wordDisplay');
+            wordDisplay.textContent = getRandomWord();
+            
+            // Add animation effect
+            wordDisplay.style.animation = 'none';
+            void wordDisplay.offsetWidth; // Trigger reflow
+            wordDisplay.style.animation = 'fadeIn 0.5s';
+        }
+
+        // Initial word display
+        showNewWord();
+    </script>
 </body>
 </html>
